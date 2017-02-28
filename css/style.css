@@ -1,0 +1,288 @@
+@media screen and (max-device-width: 480px){
+	#nav_container{
+		position: relative;
+	}
+	.content{
+		width: 300px;
+	}
+	body{
+		margin: 30px;
+		background-color: white;
+		background-image: none;
+	}
+}
+
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+	/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+	html, body{
+		margin: 5px;
+		padding-bottom: 10px;
+		background: url('../img/bg_web.jpg') no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	#nav_container{
+		position: fixed;
+		margin-left: 40px;
+		top: 0px;
+		background-color: white;
+		width: 190px;
+		height: 550px;
+		padding: 5px;
+		opacity: 0.95;
+		z-index: 100;
+		box-shadow: 0px 0px 8px #494949;
+		-moz-box-shadow: 0px 0px 8px #494949;
+		-webkit-box-shadow: 0px 0px 8px #494949;
+	}
+
+	#nav_container #logo{
+		position: absolute;
+		right: 15px;
+		top: 15px;
+		font-size: 17px;
+		text-align: right;
+		line-height: 1.5;
+		width: 180px;
+		font-family: 'Oswald', sans-serif;
+	}
+
+	#nav_container #sigep_name{
+		font-size: 60px;
+		margin-right: -4px;
+	}
+
+	#nav_container ul{
+		position: absolute;
+		top: 150px;
+		font-family: 'Oswald', sans-serif;
+		font-size: 18px;
+		text-transform: uppercase;
+		list-style-type: none;
+		padding-right: 0px;
+		right: 8px;
+		color: #000073;
+		color: black;
+		text-align: right;
+	}
+
+	#nav_container a{
+		color: #000073;
+		color: black;
+	}
+
+	#nav_container a:hover{
+		text-decoration: none;
+	}
+
+	#nav_container li{
+		padding-bottom: 6px;
+		padding-top: 6px;
+		margin-bottom: 3px;
+		padding-right: 6px;
+		padding-left: 6px;
+		-webkit-transition: all 0.5s;
+		transition: all 0.5s;
+	}
+
+	#nav_container li:hover{
+		background-color: #EDEDED;
+	}
+
+	#nav_container li a{
+		color: black;
+	}
+
+	#nav_container li a:hover{
+		text-decoration: none;
+	}
+
+	#nav_container #active{
+		color: #000073;
+	}
+
+	.content{
+		position: relative;
+		top: 0px;
+		padding-left: 20px;
+		padding-right: 30px;
+		margin-left: 270px;
+		margin-right: auto;
+		width: 560px;
+		border: 1px solid gray;
+		background-color: white;
+		background-image:url('../img/gplight.png');
+		background-repeat:repeat;
+		min-height: 500px;
+		-webkit-border-radius: 8px;
+			-moz-border-radius: 8px;
+				border-radius: 8px;
+		font-family: 'Fenix', serif;
+		font-size: 16px;
+		line-height: 1.5;
+		opacity: .97;
+		box-shadow: 0px 0px 8px #494949;
+		-moz-box-shadow: 0px 0px 8px #494949;
+		-webkit-box-shadow: 0px 0px 8px #494949;
+	}
+
+	.content #header{
+		margin-top: 20px;
+		margin-bottom: -5px;
+		padding-bottom: 20px;
+		margin-left: 0px;
+		line-height: .7;
+		border-bottom: 1px solid gray;
+		font-family: 'Oswald';
+		font-size: 36px;
+		text-transform: uppercase;
+		text-shadow: 0px 0px 4px lightgray;
+	}
+
+	.content h4{
+		font-family: 'Oswald';
+		font-size: 16px;
+		text-transform: uppercase;
+		font-weight: normal;
+	}
+
+	#footer{
+		position: absolute;
+		bottom: 22px;
+		padding-top: 2px;
+		width: 190px;
+		font-family: 'Arvo', sans-serif;
+		font-size: 11px;
+		height: 20px;
+		border-top: 1px solid gray;
+		margin-right: auto;
+		margin-left: auto;
+		text-align: center;
+	}
+
+	#brothers{
+		padding: 0px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.brother{
+		font-family: 'Open Sans', serif;
+		font-weight: 400;
+		width: 313px;
+		line-height: 1.5;
+		color: black;
+		background-color: #FAFAFA;
+		border: 1px solid #D1D1D1;
+		height: auto;
+		min-height: 95px;
+		margin: 5px;
+		padding: 10px;
+		padding-top: 30px;
+		position: relative;
+		overflow: hidden;
+		-webkit-border-bottom-right-radius: 1.2em;
+      		-moz-border-radius-bottomright: 1.2em;
+				border-bottom-right-radius: 1.2em;
+		box-shadow: 1px 1px 8px lightgray;
+	}
+
+	.brother_image{
+		width: 140px;
+		height: 121px;
+		position: absolute;
+		top: 7px;
+		left: 5px;
+		background-image:url('../img/placeholder.jpg');
+		background-size: 140px 121px;
+		-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+				border-radius: 3px;
+	}
+
+	.moreinfo{
+		padding-top: 4px;
+		margin-top: 34px;
+		font-size: 12px;
+	}
+
+	.eboard{
+		height: auto;
+	}
+
+	.position{
+		font-size: 14px;
+		padding-left: 148px;
+	}
+
+	.name{
+		font-size: 17px;
+		font-weight: 600;
+		padding-left: 148px;
+	}
+
+	.hometown{
+		font-size: 12px;
+		padding-left: 148px;
+	}
+
+	.yearcollege{
+		position: absolute;
+		top: 5px;
+		right: 10px;
+		font-size: 14px;
+		color: #000073;
+	}

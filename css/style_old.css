@@ -1,0 +1,202 @@
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+	/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+	html,
+	body{
+		height: 100%;
+		margin: 5px;
+		background-image:url('../img/groovepaper.png');
+		background-repeat:repeat;
+	}
+
+	.header{
+		margin-left: auto;
+		margin-right: auto;
+		height: 200px;
+		background-color: #3846AD;
+		background-image:url('../img/banner.jpg');
+		text-align: center;
+		color: white;
+		width: 812px;
+		z-index: 100;
+	}
+
+	#nav{
+		position: absolute;
+		font-family: 'Oswald', sans-serif;
+		left: 50%;
+		margin-left: -385px;
+		width: 800px;
+		top: 175px;
+		height: 20px;
+		font-size: 15px;
+		text-transform: uppercase;
+		list-style-type: none;
+		padding: 0;
+		color: white;
+		font-weight: bold;
+		z-index: 100;
+	}
+
+	#nav a{
+		color: white;
+	}
+
+	#nav a:hover{
+		padding-bottom: 7px;
+		text-decoration: none;
+		border-bottom: 3px solid #28008C;
+	}
+
+	#nav #active{
+		padding-bottom: 7px;
+		border-bottom: 3px solid #28008C;
+	}
+
+	#nav li{
+		display: inline;
+		margin-right: 6px;
+		padding-right: 10px;
+		border-right: 1px solid gray;
+	}
+
+	#nav li:last-child{
+		margin-right: 0px;
+		border-right: none;
+	}
+
+	.content{
+		position: relative;
+		top: -10px;
+		padding-left: 5px;
+		padding-right: 5px;
+		margin-right: auto;
+		margin-left: auto;
+		width: 800px;
+		border-left: 1px solid gray;
+		border-right: 1px solid gray;
+		border-bottom: 1px solid gray;
+		background-color: white;
+	}
+
+	#footer{
+		position: relative;
+		top: -10px;
+		width: 806px;
+		font-family: 'Arvo', sans-serif;
+		font-size: 13px;
+		height: 20px;
+		border-right: 1px solid gray;
+		border-left: 1px solid gray;
+		border-bottom: 1px solid gray;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 2px;
+		background-color: #F6F5FA;
+		text-align: center;
+	}
+
+	#brothers{
+		border: 1px solid gray;
+		padding: 5px;
+		margin: 20px;
+	}
+
+	.brother{
+		font-family: 'Arvo', serif;
+		width: 342px;
+		line-height: 1.5;
+		background-color: #F7F2F4;
+		border: 1px solid #D1D1D1;
+		margin: 5px;
+		padding: 10px;
+		padding-top: 8px;
+		position: relative;
+		float: left;
+		overflow: hidden;
+		-webkit-border-bottom-right-radius: 1.2em;
+      		-moz-border-radius-bottomright: 1.2em;
+				border-bottom-right-radius: 1.2em;
+	}
+
+	.moreinfo{
+		font-size: 12px;
+	}
+
+	.eboard{
+		height: 60px;
+	}
+
+	.brother .plus{
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		width: 236px;
+		background-color: #CCC4C7;
+		text-align: center;
+	}
+
+	.name{
+		font-size: 16px;
+	}
+
+	.hometown{
+		font-size: 12px;
+	}
+
+	.yearcollege{
+		position: absolute;
+		top: 5px;
+		right: 10px;
+		font-size: 20px;
+		color: gray;
+	}
